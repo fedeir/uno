@@ -25,7 +25,7 @@ function verExtras(){
 
     let total = horasCien + horasCincuenta
     
-    document.getElementById("resultado").value =`$${(total.toFixed(2)).toString()}`;
+   
 
     alert(`Usted debe cobrar $${total.toFixed(2)} en concepto de extras`);
 
