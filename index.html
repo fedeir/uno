@@ -16,8 +16,8 @@
     <body>
         <main>
             <div>
-                <form action="" name="form1" id="form1" class="border p-md-1">
-                    <div>
+                <form action="" name="form1" id="form1" class="border p-md-1 container container-sm ">
+                    <div class="container-sm">
                         <label for="sueldo" class="form-label"
                             >Ingrese su sueldo</label
                         >
@@ -27,11 +27,12 @@
                             name="sueldo"
                             id="sueldo"
                             class="border"
+                            onClick="vaciar();"
                             value="0"
                         />
                     </div>
 
-                    <div>
+                    <div class="container-sm">
                         <label for="hCien" class="form-label"
                             >Ingrese cantidad de horas al cien</label
                         >
@@ -40,12 +41,13 @@
                             type="number"
                             name="hCien"
                             id="hCien"
-                            value="0"
+                            onClick="this.select();"
+                            value="null"
                         />
                     </div>
 
-                    <div>
-                        <label for="hCincuemta" class="form-label"
+                    <div class="container-sm">
+                        <label for="hCincuenta" class="form-label"
                             >Ingrese cantidad de horas normales</label
                         >
                         <input
@@ -53,6 +55,7 @@
                             type="number"
                             name="hCincuenta"
                             id="hCincuenta"
+                            onClick="this.select();"
                             value="0"
                         />
                     </div>
@@ -65,7 +68,23 @@
                         value="PRESIONAR"
                         onclick="verExtras()"
                     />
+                    
+                    <div class="container-sm" id="divResul" hidden>
+                        <label for="resultado" class="form-label"
+                            >Te Deberían a pagar</label
+                        >
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="inResultado"
+                                id="inResultado"
+                                value=""
+                             />
+                    
+                    </div>
                 </form>
+
+                
             </div>
         </main>
 
